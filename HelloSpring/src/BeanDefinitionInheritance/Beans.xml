@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "helloWorld" class = "BeanDefinitionInheritance.Class_One" >
+      <property name = "message_one" value = "My name is is Sachin"/>
+      <property name = "message_two" value = "We are learning Spring Framework"/>
+   </bean>
+   
+   <bean id = "Spring" class = "BeanDefinitionInheritance.CLass_Two" 
+   parent = "Class_One">
+    <property name = "message_one" value = "This is an Example of bean"/>
+      <property name = "message_two" value = "Inheritance "/>
+       <property name = "message_three" value = "That is it..."/>
+      
+   </bean>
+   <bean class = "org.BeanScope.InitHelloBean" />
+</beans>
