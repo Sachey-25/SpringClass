@@ -1,0 +1,111 @@
+Web services
+1. SOAP-based
+2. Rest-Styled.
+
+Simple object access protocol
+- /user 
+-/ disply ---> api 
+
+SOAP is XML based protocol. it is platform 
+independent and language independent. 
+by using SOAP, you will be able to interact
+with oter programming language applications.
+
+REST --> Representational State transfer
+acrhitectural style. not a protocol
+
+{}
+
+
+GET ---> It reads a resource
+PUT ---> It updates an existing resource
+POST ---> It creates a new resource
+DELETE ---> it deletes the resource
+
+for example : 
+
+POST/users: it creates a users
+Get/users/{id}: it retrives the details of users
+
+Spring boot is a project that is built on
+the top of SpringFramewok, it provides 
+an easier and faster way to set up, 
+configure, and run both simple and web based
+applications. 
+
+it is a spring module that provides RAD
+(RAPID APPLICATON DEVELOPMENT) features to 
+the spring Framework. 
+It is sed to create a stand-alone Spring
+based application that you can just run. 
+
+
+Spring Configurations
+
+Spring Framework + Embedded HTTP Servers +
+XML <Bean Configurtion> ====> Spring Boot.
+
+HOw to create soringboot project
+--> Eclipse 
+
+Spring Initilizr is a web based tool provided
+ by the Pivotsl web service. with the help 
+of spring Initializr, we can easily generate
+the structure of spring boot Project. 
+it offers extensible API for creating JVM 
+base projects...
+
+Lets dig in
+
+Maven project 
+STS file ---> new ---> Maven Project
+
+Click next
+
+groupid:org.SpringbootProject
+artifact id:SpringBootProject
+name : SpringBootProject
+version: 0.0.1-SNAPSHOT
+packages: org.SpringbootProject.SpringBootProject
+
+File Explorer
+find App.java <---- Main Main()
+{
+System.out.println("Hello -World!");
+}
+
+file explorer --> pom.xml
+<properties>
+<Java.version>1.8</java.version>
+</properties>
+
+pom.xml --> modle of STS --> dependencies
+
+groupID :org.springframework.boot
+Artifact id : spring-boot-starter-parent
+version : 2.2.1
+
+--> create a dependency within pom.xml file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
