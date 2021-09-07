@@ -1,0 +1,130 @@
+spring.start.io --> spring cloud -> maven
+
+STS =--> Eclipse 
+file ---> package 
+right ---> new --> others ---> sping boot
+---> spring starter project ---> open windows
+
+
+name : HelloWorld --> next 
+
+part 2: we need to add the dependencies!
+web ----> we will make necessary dependency 
+check click on finish --> "Helloworld"...
+
+step: 2) we need to create a java class
+	Appconfiguration --> without main func
+	
+	@RestController 
+	public class Appconfiguration{
+		@RequestMapping("/hello")
+		public String hello(){
+		return "Hello_world!!!" ;	
+		}
+	}
+---------> we need to tell the spring what is 
+controller and what is mapping
+
+@RestController  ---> Class
+
+@RequestMapping("/hello") --> method
+
+by default -- spring boot app will be running
+in port : 8080, 8081 ---> Tomcat server!
+http://localhost:8080/ ----> HelloSprintboot
+
+http://localhost:8080/hello ---> Helloworld
+
+SpingBoot annotations
+
+- metadata
+SB annotations is a form of metadata that 
+provides data about a program.
+in other words, annotations are used to 
+provide suplimental information about a program
+
+-- it is not a part of the application that we 
+develop. it does not have a direct effect
+on the opertion of the code they annotate. 
+
+
+-- it does not change the action of the 
+compiled program.
+
+
+@Required : it applies to the bean setter methos. 
+that the annotated bean must be populated at 
+the configuration time with the required 
+property. else it will throw an exception 
+<BeanInitilizationException>
+
+JavaClass : requiredannotationclass
+public class requiredannotationclass {
+	
+	public class Machine{
+	@Required
+	public void setCost(Integer cost){
+	this.cost=cost;
+}
+	public Integer getCost(){ return cost;}
+}
+
+
+}
+
+Spring MVC and REST annotations
+
+@RequestMapping : it is used to map 
+the webrequest, it has many optional consumers
+consumes, beader, method, name, params, path
+produces and value.
+
+
+@GetMapping : it maps the HTTP Get request
+on the specific handler (controller)
+@RequestMapping(method=RequstMethog.GET)
+
+
+
+@PostMapping: HTTP POST ---> Postman
+
+POST :-----> http://localhost:8080/helo --> send
+{name : "Sachin" ; }
+instead of using 
+@RequestMapping(Method=RequestMethod.PUT)
+
+@PutMapping
+@DeleteMapping
+@PatchMapping ------------> POST Man
+
+
+databinding ---> HTTP DataBinding
+@RequestBody: it is used to bind HTTP
+request with an object in a method parameter.
+-- When we annotate a method parameter
+with @RequestBody, the spring framewrok binds
+the incoming HTTP request to that parameter.
+
+@ReponseBody:--> ResponseBody itself
+annotated with @ReponseBody, it eliminates 
+the needfor annotating each with @responseBody
+
+@RestController ---> this is a combination
+of @Controller and @ResponseBody 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
