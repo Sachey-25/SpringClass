@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JS - Variables</title>
+    </head>
+    <body>
+        <p id = "add"></p>
+        <p id = "logic"></p>
+        <script>
+            var number_one= 10; // we do not have to specify dt
+            //explicitly, because var is already built in with that information
+            //--> We need to name the variable
+            var number_two= 20;
+            var result = number_one+number_two;
+            document.getElementById("add").innerHtml=
+            result + "Getting this on adding 10 and 20";
+
+            // indentifiers ----> variables 
+            // JS is case sensitive --> upper and lower a and A
+            // _ a-z A-Z $
+        </script>
+
+        <script>
+            var decimal = 300; // text string
+            var name = "Sachin";
+            var city = "Bangalore";
+            document.getElementById("logic").innerHTML=
+            decimal + name + city;
+
+            // int + str
+
+            document.getElementById("logic").innerHTML= decimal;
+
+        </script>
+
+        <script>
+            let name = "Sachin";
+            let name1 = "Tendulakar";
+
+            //JS can be used to have the output in different ways
+            // document.write();
+            // console.log()
+            // window.alert() 
+
+            console.log("Hello world");
+            document.write("My name is : " + name);
+
+        </script>
+        <script>
+            <h3> Redeclaration of a variable using let </h3>
+
+            let number_one = 1757051;
+            {
+                let number_one=123456789;
+            }
+            document.write(number_one);
+        </script>
+         <script>
+            
+            var number_two = 1757051;
+            {
+                var number_two=123456789;
+
+            }
+            document.write(number_one);
+        </script>
+        <script>
+            var value = 200; // allowed
+            let value = 300; // not allowed
+
+            {
+                var value = 200; // allowed
+                let value = 300; // not allowed
+            }
+        </script>
+
+        <h3>JS variable- Const </h3> 
+        <script>
+            //create an array
+            const info = ["Sachin","Bangalore","Wipro"];
+            // changing an element
+            info[0]="Rahul";
+            //add an element
+            info.push("Cricket");
+            //Disply an elements of an array
+            document.write(info);
+        </script>
+
+        <script>
+            try {
+                const info_one ={name:"Sachin", city="Bangalore", org:"wipro"};
+                info_one = { name:"Rahul", city="Bangalore", org:"BCCI"} ; 
+            }
+            catch(err){
+                console.log(err);
+            }
+        </script>
+    </body>
+</html>

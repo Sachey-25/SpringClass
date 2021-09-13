@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <script>
+            function check_on(){
+                document.getElementById("another").innerHTML="I am another approach";
+            }
+        </script>            
+        <script>
+            function check(){
+                document.getElementById("obj").innerHTML="My name is Sachin";
+            }
+        </script>    
+    </head>
+    <body>
+        <h2>Welcome to JavaScript </h2>
+        <p id="Javascript"></p>
+        <p id="another">This may change</p>
+        <p id = "obj"></p>
+        
+        //This is a button approach:
+        <button type ="button" onclick="check_on()">first button </button> <br> <br>
+        <script>
+            document.getElementById("Javascript").innerHTML = "Hello to the world from JS";
+        </script>
+
+        <script src="example.js"></script>
+        <button type="button" onclick="check()"> second button </button>
+
+
+    </body>
+</html>
