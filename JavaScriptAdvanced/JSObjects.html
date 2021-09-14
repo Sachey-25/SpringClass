@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScriptObjets </title>
+    </head>
+    <body>
+        <p id ="Object"></p>
+        <script>
+            const person = {
+            firstname : "Sachin",
+            lastname  : "Pratik",
+            city  : "Bidar"
+            };
+            document.getElementById("Object").innerHTML=person.firstname + " " +
+            person.lastname;  
+        </script>
+        <script>
+            const info = new Object(); // Object/Memory created
+            info.empid = 101;
+            info.empname = "Sachin";
+            info.empcity = "Bidar";
+            info.empage = 30;
+            document.write(info.empid + "<br>");
+            document.write(info.empname + "<br>");
+            document.write(info.empcity + "<br>");
+            document.write(info.empage + "<br>");
+        </script>
+        <script>
+            const info_emp = { // Object/Memory created
+            empid : 101,
+            empname : "Sachin",
+            empcity : "Bidar",
+            empage : 30
+        };
+            let result =  "";
+            for (let i in info_emp){
+                result += info_emp[i] + "<br>" ;
+            }
+            document.write(result);
+        </script>
+        <script>
+            const myobj = {
+                name : "Sachin",
+                age : 27,
+                cars : {
+                    Name:"Ford",
+                    model : "Ecosport",
+                    color :"white",
+                    year : 2021
+                }
+            }
+            let nested_object = "cars";
+            let nested_variable = "model";
+            document.write(myobj[nested_object][nested_variable]);
+        </script>
+
+    </body>
+
+</html>

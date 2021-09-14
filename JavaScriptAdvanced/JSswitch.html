@@ -1,0 +1,66 @@
+<!Doctype Html>
+<html>
+    <head>
+        <title>Javascript Switch Statement</title> 
+    </head>
+    <body>
+        <p id = "demo"></p>
+        <p id = "for"></p>
+        <p id = "forin"> </p>
+        <p id = "while"></p> 
+        <script>
+            let day;
+            
+            switch(new Date().getDay()){
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thrusday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Satday";
+            }
+            document.getElementById("demo").innerHTML="Today is : " + day;
+        </script>
+
+        <script>
+            const cars = ["Tata_Motors","MaruthiSuzuki","Honda","Hyundai"];
+
+            let result = "";
+            for (let i = 0; i<cars.length ; i++){
+                result = result + cars[i] + "<br>" + "<br>"
+            }
+            document.getElementById("for").innerHTML=result;
+            </script>
+            <script> 
+            const car = ["Tata_Motors","MaruthiSuzuki","Honda","Hyundai","ford"];
+            for (let item in car){
+                result = result + car[item] + " ";
+            }
+            document.getElementById("forin").innerHTML=result;
+            </script>
+            <script>
+                let value = 0;
+                let info = "";
+                while (value < 10) {
+
+                    info += "<br> The number is " + value;
+
+                }
+                document.getElementById("while").innerHTML=result;
+            </script>
+    </body>
+</html>

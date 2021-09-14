@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Validation - forms </title> 
+        <script>
+            function validateform(){
+                let input = document.forms["ExampleForm"]["YourName"].value;
+                if(input == ""){
+                    alert("Name must be filled");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2> Javascript Validations </h2>
+        <form name = "ExampleForm" onsubmit="return validateform()" required>
+            Name : <input type = "text" name = "YourName">
+            <input type ="submit" value = "Submit">
+        
+        </form>
+    </body>
+</html>

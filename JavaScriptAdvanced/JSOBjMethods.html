@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Object Methods</title>
+    </head>
+    <body>
+        <script>
+            //Create an object
+            const employee = {
+                empid : 101,
+                empname : "sachin",
+                emporg : "Wipro",
+                empcity : "Bangalore",
+                //function representaion ---> function <funtion _name> () {}
+                    empdetails : function(){
+                        return this.empname + " " + this.emporg + " ";
+                    },
+                    empidentity : function(){
+                        return this.empid + " ";
+                    },
+                    empcitybelong: function(){
+                        return this.empcity + " ";
+                    },
+                    
+            };
+
+            //display the data from the object
+            document.write(employee.empdetails());
+            document.write(employee.empidentity());
+            document.write(employee.empcitybelong());
+            document.write("My name is : " + employee.empname());
+        </script>
+        <script>
+            const person = {
+                firstname : "Sachin",
+                lastname : "Pratik"
+            };
+            person.name = function() {
+                return (this.firstname).toUpperCase();
+            };
+            document.write("-----------------");
+            document.write(person.name());
+        </script>
+    <h2>JavaScript Constructors </h2> 
+        <script>
+            function Construct(name, model, type, color){
+                this.name = name;
+                this.model=model;
+                this.type=type;
+                this.color=color;
+            }
+            // create a car Object 
+            const Car_info = new Construct("Creata","2021","Manual","White");
+            //Display name
+            document.write("The name of the care is : " + Car_info.name + "<br>");
+            document.write("The model of the care is : " + Car_info.model+ "<br>");
+            document.write("The type of the care is : " + Car_info.type+ "<br>");
+            document.write("The color of the care is : " + Car_info.color+ "<br>");
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
